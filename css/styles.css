@@ -1,0 +1,72 @@
+/* 
+-- -- -- -- -- -- -- -- -- -- -- -- -- --
+Format Notes 
+-- -- -- -- -- -- -- -- -- -- -- -- -- --
+#Mobile: 320px - 480px (avg 360-414)
+#Tablet:  768px;
+#Monitor: 1366px - 1920px (avg)
+
+font-family: 'Ibarra Real Nova', serif;
+font-family: 'Public Sans', sans-serif;
+-- -- -- -- -- -- -- -- -- -- -- -- -- --
+*/
+
+/* 
+
+Table of Contents:
+
+#Formatting
+#Header
+#Hero
+#Footer
+#Toggle States
+
+*/
+/* ######################## #Formatting ########################## */
+* {
+  font-family: 'Public Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -0.45px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.36px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: -0.29px;
+}
+
+.body1 {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.body2 {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+button, a {
+  font-size: 12px;
+  line-height: 14.1px;
+  letter-spacing: 2px;
+}
+
+
+/* ######################## #Toggle States ########################## */
+.hidden  {
+  display: none;
+}
