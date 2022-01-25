@@ -1,0 +1,29 @@
+/* 
+Table of Contents:
+
+#Header
+#Hero
+#About Me
+#Contact
+#Footer
+*/
+
+/* ####################### #Header ######################### */
+
+/* ####################### #Hero ######################### */
+.hero__background__img {
+  width: 800px;
+}
+
+.hero__intro__container {
+  background: white;
+}
+
+/* ####################### #About Me ######################### */
+.aboutme__img {
+  max-height: 540px;
+}
+
+/* ####################### #Contact ######################### */
+
+/* ####################### #Footer ######################### */

@@ -2,27 +2,38 @@
 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 Format Notes 
 -- -- -- -- -- -- -- -- -- -- -- -- -- --
+===SCREENS===
 #Mobile: 320px - 480px (avg 360-414)
 #Tablet:  768px;
 #Monitor: 1366px - 1920px (avg)
-
+-- -- -- -- -- -- -- -- -- -- -- -- -- --
+===FONTS===
 font-family: 'Ibarra Real Nova', serif;
 font-family: 'Public Sans', sans-serif;
+-- -- -- -- -- -- -- -- -- -- -- -- -- --
+===COLORS===
+##Primary
+Slightly Desaturated Cyan: rgb(95, 180, 162)
+Dark Blue: rgb(32, 58, 76)
+Grayish Dark Blue: rgb(51, 50, 61)
+
+##Secondary
+Very Light Grey (bg): rgb(250, 250, 250)
+Light Grey (text field): rgb(234, 234, 235)
+Brign Red (errors): rgb(244, 48, 48)
 -- -- -- -- -- -- -- -- -- -- -- -- -- --
 */
 
 /* 
-
 Table of Contents:
 
-#Formatting
-#Header
-#Hero
-#Footer
+#Fonts
+#Margins
+#Buttons
 #Toggle States
-
 */
-/* ######################## #Formatting ########################## */
+
+/* ####################### #Fonts ######################### */
 * {
   font-family: 'Public Sans', sans-serif;
 }
@@ -65,8 +76,16 @@ button, a {
   letter-spacing: 2px;
 }
 
+/* ####################### #Margins ######################### */
+body {
+  margin: 0 30px;
+}
 
-/* ######################## #Toggle States ########################## */
+
+/* ####################### #Buttons ######################### */
+
+
+/* ###################### #Toggle States ######################## */
 .hidden  {
   display: none;
 }
