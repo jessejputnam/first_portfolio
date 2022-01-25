@@ -25,53 +25,108 @@
 
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/index_styles.css" rel="stylesheet" />
     <title>Portfolio | Jesse Putnam</title>
   </head>
+  <!-- end head -->
+
   <body>
     <header>
-      <div class="header__container">
-        <img src="images/logo.svg" class="header__logo" />
-        <nav class="header__links__container desktop hidden">
-          <a class="header__navlink">Home</a>
-          <a class="header__navlink">Portfolio</a>
-          <a class="header__navlink">Contact Me</a>
-        </nav>
-      </div>
-      <!-- end header__container -->
+      <img src="images/logo.svg" class="header__logo" />
+      <nav class="header__links__container desktop hidden">
+        <a class="header__navlink">Home</a>
+        <a class="header__navlink">Portfolio</a>
+        <a class="header__navlink">Contact Me</a>
+      </nav>
     </header>
 
-    <div class="header__menu mobile modal hidden">
+    <nav class="header__menu mobile modal hidden">
       <a>Home</a>
       <a>Portfolio</a>
       <a>Contact Me</a>
-    </div>
+    </nav>
     <!-- end mobile__header__menu -->
 
-    <div class="hero__container">
+    <section class="hero__container">
+      <img
+        src="images/personal/mass_moca_dots1.jpg"
+        class="hero__background__img"
+      />
       <div class="hero__intro__container">
-        <h2 class="aboutme__title">
-          Hey, I'm Jesse Putnam and I love making and maintaining beautiful
-          websites
+        <h2 class="hero__intro__txt">
+          Hey, I'm Jesse Putnam and I love building beautiful websites
         </h2>
-        <button class="btn btn__aboutme">ABOUT ME</button>
+        <button type="button" class="btn btn__primary btn__aboutme">
+          <img
+            alt="down arrows"
+            src="images/icons/down-arrows.svg"
+            class=""
+          />ABOUT ME
+        </button>
       </div>
-    </div>
+      <!-- end hero__intro__container -->
+    </section>
     <!-- end hero__container -->
 
-    <div class="aboutme__container"></div>
+    <section class="aboutme__container">
+      <img
+        alt="Picture of me"
+        src="images/personal/LRM-EXPORT-13387477400618-20181008-002051656.jpeg"
+        class="aboutme__img"
+      />
+      <div class="aboutme__txt__container">
+        <hr class="divider" />
+        <h2 class="aboutme__heading">About Me</h2>
+        <p class="body1">
+          I’m an aspiring junior front-end developer hungry to break into the
+          world of web design. I focus on writing accessible HTML, using modern
+          CSS practices and writing clean and readable JavaScript. I am
+          self-driven and independent, learning HTML5, CSS3, and Vanilla
+          JavaScript on my own through various websites, challenges, textbooks,
+          and projects. I’m based in Portland, ME, but I’m happy working
+          remotely as well. I love reading, critical analysis, and, as a former
+          public school Language Arts teacher, have a great respect and
+          dedication to keeping a growth mindset and being a life-long learner
+          in an infinitely interesting world. When I am not coding, I am often
+          found playing and recording music with guitar, mandoling, and/or
+          accordion &mdash; unless, of course, I'm off hiking with my dog, Luna.
+          I’d love you to check out my work.
+        </p>
+        <button type="button" class="btn btn__secondary btn__portfolio">
+          GO TO PORTFOLIO
+        </button>
+        <hr class="divider" />
+      </div>
+      <!-- end aboutme__txt__container -->
+    </section>
     <!-- end aboutme__container -->
 
-    About Me About Me I’m a junior front-end developer looking for a new role in
-    an exciting company. I focus on writing accessible HTML, using modern CSS
-    practices and writing clean JavaScript. When writing JavaScript code, I
-    mostly use React, but I can adapt to whatever tools are required. I’m based
-    in London, UK, but I’m happy working remotely and have experience in remote
-    teams. When I’m not coding, you’ll find me outdoors. I love being out in
-    nature whether that’s going for a walk, run or cycling. I’d love you to
-    check out my work. Go to Portfolio Interested in doing a project together?
-    Contact Me
+    <section class="contact__container">
+      <h2 class="contact__heading">Interested in working together?</h2>
+      <hr class="divider" />
+      <button type="button" class="btn btn__secondary btn__contact">
+        CONTACT ME
+      </button>
+    </section>
+    <!-- end contact__container -->
     <footer>
-      Icons provided by: "https://www.flaticon.com/free-icons/programming"
+      <div class="footer__links__container">
+        <nav class="footer__nav__container">
+          <img src="images/logo.svg" class="footer__logo" />
+          <a class="nav__link">HOME</a>
+          <a class="nav__link">PORTFOLIO</a>
+          <a class="nav__link">CONTACT ME</a>
+        </nav>
+        <!-- end footer__nav__container -->
+        <nav class="footer__socials__container">
+          <img class="footer__social" src="images/icons/github.svg" />
+          <img class="footer__social" src="images/icons/linkedin.svg" />
+          <img class="footer__social" src="images/icons/twitter.svg" />
+        </nav>
+        <!-- end footer__social__container -->
+      </div>
+      <!-- end footer__links__container -->
+      <p class="footer__credit">Icons made by Freepik from www.flaticon.com</p>
     </footer>
   </body>
 </html>
