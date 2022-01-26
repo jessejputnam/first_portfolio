@@ -13,15 +13,22 @@ Table of Contents:
 /* ####################### #Hero ######################### */
 .hero__background__img {
   width: 800px;
+  margin-bottom: 24px;
 }
 
-.hero__intro__container {
-  background: white;
+.hero__intro__txt {
+  margin-bottom: 24px;
 }
 
 /* ####################### #About Me ######################### */
 .aboutme__img {
   max-height: 540px;
+}
+
+.btn__aboutme {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 /* ####################### #Contact ######################### */

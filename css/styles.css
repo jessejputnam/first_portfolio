@@ -29,7 +29,9 @@ Table of Contents:
 
 #Fonts
 #Margins
-#Buttons
+#Page Layout
+#Headers
+#Buttons / Links
 #Toggle States
 */
 
@@ -74,6 +76,7 @@ button, a {
   font-size: 12px;
   line-height: 14.1px;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 /* ####################### #Margins ######################### */
@@ -81,11 +84,99 @@ body {
   margin: 0 30px;
 }
 
+/* ####################### #Page Layout ######################### */
+body {
+  background: rgb(250, 250, 250);
+}
 
-/* ####################### #Buttons ######################### */
+/* ####################### #Headers ######################### */
 
+header {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__mobile__links__toggle {
+  cursor: pointer;
+  padding: 4px 4px;
+}
+
+.header__mobile-links__modal {
+  visibility: hidden;
+  opacity: 0;
+  height: 40vw;
+  width: 55vw;
+  background: rgb(32, 58, 76);
+  color: white;
+  padding: 10px 0;
+  box-shadow: 0 0 2px .5px rgba(0, 0, 0, 0.575);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  transition: visibility 0s linear .3s, opacity .3s;
+}
+
+
+
+/* ##################### #Buttons / Links ####################### */
+a {
+  transition: color .15s, font-weight .15s, padding .15s;
+}
+
+a:hover {
+  color: rgb(95, 180, 116);
+}
+
+a:active {
+  color: rgb(50, 211, 90);
+  border-radius: 3px;
+  box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.438);
+  font-weight: bold;
+  text-align: center;
+  padding: 0 3px;
+}
+
+button {
+  text-align: center;
+  line-height: 48px;
+}
+
+.btn__primary {
+  background: rgb(32, 58, 76);
+  color: white;
+  font-style: italic;
+  height: 48px;
+  width: 200px;
+  transition: background-color .1s;
+}
+
+.btn__primary:hover {
+  background-color: rgba(0, 134, 105, 0.849);
+  border-color: rgba(0, 134, 105, 0.849);
+}
+
+.btn__primary:active {
+  background-color: rgb(61, 29, 29);
+}
+
+.btn__secondary {
+  height: 48px;
+  width: 175px;
+}
 
 /* ###################### #Toggle States ######################## */
 .hidden  {
   display: none;
+}
+
+.fade-in {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 300ms;
 }
