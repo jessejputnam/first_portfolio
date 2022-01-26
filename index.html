@@ -26,21 +26,29 @@
     <link href="css/reset.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/index_styles.css" rel="stylesheet" />
+
+    <script src="script.js" defer></script>
+
     <title>Portfolio | Jesse Putnam</title>
   </head>
   <!-- end head -->
 
   <body>
     <header>
-      <img src="images/logo.svg" class="header__logo" />
+      <img alt="Site logo" src="images/logo.svg" class="header__logo" />
       <nav class="header__links__container desktop hidden">
         <a class="header__navlink">Home</a>
         <a class="header__navlink">Portfolio</a>
         <a class="header__navlink">Contact Me</a>
       </nav>
+      <img
+        alt="Toggle nav menu"
+        src="images/icons/hamburger.svg"
+        class="mobile header__mobile__links__toggle"
+      />
     </header>
 
-    <nav class="header__menu mobile modal hidden">
+    <nav class="header__mobile-links__modal mobile modal">
       <a>Home</a>
       <a>Portfolio</a>
       <a>Contact Me</a>
@@ -60,7 +68,7 @@
           <img
             alt="down arrows"
             src="images/icons/down-arrows.svg"
-            class=""
+            class="img__btn__arrows"
           />ABOUT ME
         </button>
       </div>
