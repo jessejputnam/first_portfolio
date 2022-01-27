@@ -27,7 +27,8 @@
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/index_styles.css" rel="stylesheet" />
 
-    <script src="script.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/index_script.js" defer></script>
 
     <title>Portfolio | Jesse Putnam</title>
   </head>
@@ -48,82 +49,83 @@
       />
     </header>
 
-    <nav class="header__mobile-links__modal mobile modal">
-      <a>Home</a>
-      <a>Portfolio</a>
-      <a>Contact Me</a>
-    </nav>
-    <!-- end mobile__header__menu -->
+    <main class="main__container">
+      <nav class="header__mobile-links__modal mobile modal">
+        <a>Home</a>
+        <a>Portfolio</a>
+        <a>Contact Me</a>
+      </nav>
+      <!-- end mobile__header__menu -->
 
-    <section class="hero__container">
-      <img
-        src="images/personal/mass_moca_dots1.jpg"
-        class="hero__background__img"
-      />
-      <div class="hero__intro__container">
-        <h2 class="hero__intro__txt">
-          Hey, I'm Jesse Putnam and I love building beautiful websites
-        </h2>
-        <button type="button" class="btn btn__primary btn__aboutme">
-          <img
-            alt="down arrows"
-            src="images/icons/down-arrows.svg"
-            class="img__btn__arrows"
-          />ABOUT ME
+      <section class="hero__container">
+        <div class="hero__background__img"></div>
+        <div class="hero__intro__container">
+          <h2 class="hero__intro__txt">
+            Hey, I'm Jesse Putnam and I love building beautiful websites
+          </h2>
+          <button type="button" class="btn btn__primary btn__aboutme">
+            <img
+              alt="down arrows"
+              src="images/icons/down-arrows.svg"
+              class="img__btn__arrows"
+            />ABOUT ME
+          </button>
+        </div>
+        <!-- end hero__intro__container -->
+      </section>
+      <!-- end hero__container -->
+
+      <section class="aboutme__container" id="about-me">
+        <img
+          alt="Picture of me and my dog, Luna"
+          src="images/personal/LRM-EXPORT-13387477400618-20181008-002051656.jpeg"
+          class="aboutme__img"
+        />
+        <div class="aboutme__txt__container">
+          <hr class="divider" />
+          <h2 class="aboutme__heading">About Me</h2>
+          <p class="body1">
+            I’m an aspiring junior front-end developer hungry to break into the
+            world of web design. I focus on writing accessible HTML, using
+            modern CSS practices and writing clean and readable JavaScript. I am
+            self-driven and independent, learning HTML5, CSS3, and Vanilla
+            JavaScript on my own through various websites, challenges,
+            textbooks, and projects. I’m based in Portland, ME, but I’m happy
+            working remotely as well. I love reading, critical analysis, and, as
+            a former public school Language Arts teacher, have a great respect
+            and dedication to keeping a growth mindset and being a life-long
+            learner in an infinitely interesting world. When I am not coding, I
+            am often found playing and recording music with guitar, mandoling,
+            and/or accordion &mdash; unless, of course, I'm off hiking with my
+            dog, Luna. I’d love you to check out my work.
+          </p>
+          <button type="button" class="btn btn__secondary btn__portfolio">
+            GO TO PORTFOLIO
+          </button>
+          <hr class="divider" />
+        </div>
+        <!-- end aboutme__txt__container -->
+      </section>
+      <!-- end aboutme__container -->
+
+      <section class="contact__container">
+        <h2 class="contact__heading">Interested in working together?</h2>
+        <hr class="divider desktop hidden" />
+        <button type="button" class="btn btn__secondary btn__contact">
+          CONTACT ME
         </button>
-      </div>
-      <!-- end hero__intro__container -->
-    </section>
-    <!-- end hero__container -->
+      </section>
+      <!-- end contact__container -->
+    </main>
+    <!-- end main__container -->
 
-    <section class="aboutme__container">
-      <img
-        alt="Picture of me"
-        src="images/personal/LRM-EXPORT-13387477400618-20181008-002051656.jpeg"
-        class="aboutme__img"
-      />
-      <div class="aboutme__txt__container">
-        <hr class="divider" />
-        <h2 class="aboutme__heading">About Me</h2>
-        <p class="body1">
-          I’m an aspiring junior front-end developer hungry to break into the
-          world of web design. I focus on writing accessible HTML, using modern
-          CSS practices and writing clean and readable JavaScript. I am
-          self-driven and independent, learning HTML5, CSS3, and Vanilla
-          JavaScript on my own through various websites, challenges, textbooks,
-          and projects. I’m based in Portland, ME, but I’m happy working
-          remotely as well. I love reading, critical analysis, and, as a former
-          public school Language Arts teacher, have a great respect and
-          dedication to keeping a growth mindset and being a life-long learner
-          in an infinitely interesting world. When I am not coding, I am often
-          found playing and recording music with guitar, mandoling, and/or
-          accordion &mdash; unless, of course, I'm off hiking with my dog, Luna.
-          I’d love you to check out my work.
-        </p>
-        <button type="button" class="btn btn__secondary btn__portfolio">
-          GO TO PORTFOLIO
-        </button>
-        <hr class="divider" />
-      </div>
-      <!-- end aboutme__txt__container -->
-    </section>
-    <!-- end aboutme__container -->
-
-    <section class="contact__container">
-      <h2 class="contact__heading">Interested in working together?</h2>
-      <hr class="divider" />
-      <button type="button" class="btn btn__secondary btn__contact">
-        CONTACT ME
-      </button>
-    </section>
-    <!-- end contact__container -->
     <footer>
       <div class="footer__links__container">
         <nav class="footer__nav__container">
           <img src="images/logo.svg" class="footer__logo" />
-          <a class="nav__link">HOME</a>
-          <a class="nav__link">PORTFOLIO</a>
-          <a class="nav__link">CONTACT ME</a>
+          <a class="footer__nav__link">HOME</a>
+          <a class="footer__nav__link">PORTFOLIO</a>
+          <a class="footer__nav__link">CONTACT ME</a>
         </nav>
         <!-- end footer__nav__container -->
         <nav class="footer__socials__container">
