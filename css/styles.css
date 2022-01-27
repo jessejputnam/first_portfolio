@@ -206,12 +206,7 @@ a:hover {
 }
 
 a:active {
-  color: rgb(50, 211, 90);
-  border-radius: 3px;
-  box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.438);
-  font-weight: bold;
-  text-align: center;
-  padding: 0 3px;
+  color: rgb(97, 255, 137);
 }
 
 button {

@@ -17,6 +17,7 @@ Table of Contents:
   width: clamp(310px, 100%, 1110px);
   margin-bottom: 24px;
   height: clamp(275px, 50vw, 600px);
+  box-shadow: 0 0 4px 0 gray;
 }
 
 .hero__intro__txt {
@@ -37,6 +38,7 @@ Table of Contents:
 .aboutme__img {
   max-height: 540px;
   margin-bottom: 32px;
+  box-shadow: 0 0 4px 0 gray;
 }
 
 .aboutme__heading {
