@@ -185,8 +185,10 @@ footer {
   cursor: pointer;
 }
 
-.footer__social:hover {
-  filter: invert(69%) sepia(27%) saturate(642%) hue-rotate(82deg) brightness(85%) contrast(92%);
+@media (hover: hover) {
+  .footer__social:hover {
+    filter: invert(69%) sepia(27%) saturate(642%) hue-rotate(82deg) brightness(85%) contrast(92%);
+  }
 }
 
 .footer__credit {
