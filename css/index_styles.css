@@ -12,17 +12,19 @@ Table of Contents:
 
 /* ####################### #Hero ######################### */
 .hero__background__img {
-  width: 800px;
+  background: url("../images/personal/mass_moca_dots1.jpg") no-repeat;
+  background-size: cover;
+  width: clamp(310px, 100%, 1110px);
   margin-bottom: 24px;
+  height: clamp(275px, 50vw, 600px);
 }
 
 .hero__intro__txt {
   margin-bottom: 24px;
 }
 
-/* ####################### #About Me ######################### */
-.aboutme__img {
-  max-height: 540px;
+.hero__container {
+  margin-bottom: 100px;
 }
 
 .btn__aboutme {
@@ -30,6 +32,21 @@ Table of Contents:
   justify-content: space-around;
   align-items: center;
 }
+
+/* ####################### #About Me ######################### */
+.aboutme__img {
+  max-height: 540px;
+  margin-bottom: 32px;
+}
+
+.aboutme__heading {
+  margin: 28px 0;
+}
+
+.btn__portfolio {
+  margin: 15px 0 35px;
+}
+
 
 /* ####################### #Contact ######################### */
 
