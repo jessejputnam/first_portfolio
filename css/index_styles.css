@@ -34,6 +34,34 @@ Table of Contents:
   align-items: center;
 }
 
+/*                   ###### #Tablet #####           */
+@media only screen and (min-width: 650px) {
+  /* hero */
+  .hero__background__img {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .hero__intro__container {
+    height: clamp(160px, 26vw, 250px);
+    width: 420px;
+    padding: 20px 20px 0 0;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 4px 0 gray;;
+  }
+
+  .hero__intro__txt {
+    font-size: clamp(20px, 4vw, 45px);
+    margin-bottom: 5px;
+  }
+}
+
 /* ####################### #About Me ######################### */
 .aboutme__img {
   max-height: 540px;
@@ -49,7 +77,30 @@ Table of Contents:
   margin: 15px 0 35px;
 }
 
+/*       ####### #Tablet ####### */
 
-/* ####################### #Contact ######################### */
+@media only screen and (min-width: 650px) {
+  .aboutme__container {
+    display: flex;
+    justify-content: space-between;
+    /* max-height: 800px; */
+  }
 
-/* ####################### #Footer ######################### */
+  .aboutme__img {
+    margin-top: 20px;
+    width: 40vw;
+    max-width: 430px;
+    max-height: 575px;
+    object-fit: cover;
+    object-position: 100% 0;
+  }
+
+  .aboutme__txt__container {
+    width: 45vw;
+    max-width: 490px;
+  }
+
+  .aboutme__txt__container > .body1 {
+    font-size: clamp(13px, 1.5vw, 16px);
+  } 
+}

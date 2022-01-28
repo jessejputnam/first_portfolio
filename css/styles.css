@@ -35,6 +35,7 @@ Table of Contents:
 #Footer
 #Buttons / Links
 #Toggle States
+#Tablet @Media
 */
 
 /* ####################### #Fonts ######################### */
@@ -81,14 +82,19 @@ button, a {
   cursor: pointer;
 }
 
-/* ####################### #Margins ######################### */
+/* ###################### #Margins ####################### */
 .main__container {
-  margin: 0 30px;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
-/* ####################### #Page Layout ######################### */
+/* #################### #Page Layout ###################### */
 body {
   background: rgb(250, 250, 250);
+}
+
+.body__wrapper {
+  padding: 0 30px;
 }
 
 .divider {
@@ -96,11 +102,10 @@ body {
   border-top: solid 1px rgb(209, 209, 209);
 }
 
-/* ####################### #Header ######################### */
+/* ##################### #Header ####################### */
 
 header {
   margin: 30px 0;
-  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -130,7 +135,7 @@ header {
   transition: visibility 0s linear .3s, opacity .3s;
 }
 
-/* ################### #Contact Me Section ##################### */
+/* ################ #Contact Me Section ################## */
 .contact__container {
   display: flex;
   flex-direction: column;
@@ -144,11 +149,15 @@ header {
   text-align: center;
 }
 
-/* ######################### #Footer ########################### */
+/* ###################### #Footer ######################## */
 footer {
   background-color:rgb(32, 58, 76);
   color: white;
-  padding: 35px 0;
+  padding: 35px 0 0;
+}
+
+.footer__container {
+  max-width: 1110px;
 }
 
 .footer__links__container {
@@ -198,7 +207,7 @@ footer {
   color: rgb(97, 97, 97);
 }
 
-/* ##################### #Buttons / Links ####################### */
+/* ################## #Buttons / Links ################### */
 a {
   transition: color .15s, font-weight .15s, padding .15s;
 }
@@ -261,7 +270,7 @@ button {
   box-shadow: 0 0 3px 1px rgba(63, 63, 63, 0.452);
 }
 
-/* ###################### #Toggle States ######################## */
+/* ################## #Toggle States ##################### */
 .hidden  {
   display: none;
 }
@@ -270,4 +279,73 @@ button {
   visibility: visible;
   opacity: 1;
   transition: visibility 0s, opacity 300ms;
+}
+
+/* ################## #Media Queries ##################### */
+/* Hide non-mobile items */
+@media only screen and (max-width: 650px) {
+  .desktop {
+    display: none;
+  }
+
+  .divider--desktop {
+    display: none;
+  }
+}
+
+/* ####### #Tablet ######## */
+@media only screen and (min-width: 650px) {
+  .mobile {
+    display: none;
+  }
+
+  /* header */
+  header {
+    max-width: 1110px;
+    margin: 30px auto;
+  }
+
+  .header__navlink {
+    margin-left: 50px;
+  }
+
+  /* contact me */
+  .contact__container {
+    flex-direction: row;
+    align-items: center;
+    margin: 100px 0;
+  }
+
+  .contact__heading {
+    margin: 0;
+    width: 350px;
+    padding: 0;
+  }
+
+  .divider--desktop {
+    width: 40vw;
+    margin: 0 20px 0 0;
+  }
+
+  /*       ##### #Footer ##### */
+  .footer__links__container {
+    max-width: 1110px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__nav__container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer__nav__link {
+    margin: 0;
+    margin-left: 30px;
+  }
+
+  .footer__socials__container {
+    margin: 0 25px 0 0;
+  }
 }
