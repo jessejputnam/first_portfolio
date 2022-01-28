@@ -35,89 +35,106 @@
   <!-- end head -->
 
   <body>
-    <header>
-      <img alt="Site logo" src="images/logo.svg" class="header__logo" />
-      <nav class="header__links__container desktop hidden">
-        <a class="header__navlink">Home</a>
-        <a class="header__navlink">Portfolio</a>
-        <a class="header__navlink">Contact Me</a>
-      </nav>
-      <img
-        alt="Toggle nav menu"
-        src="images/icons/hamburger.svg"
-        class="mobile header__mobile__links__toggle"
-      />
-    </header>
-
-    <main class="main__container">
-      <nav class="header__mobile-links__modal mobile modal">
-        <a>Home</a>
-        <a>Portfolio</a>
-        <a>Contact Me</a>
-      </nav>
-      <!-- end mobile__header__menu -->
-
-      <section class="hero__container">
-        <div class="hero__background__img"></div>
-        <div class="hero__intro__container">
-          <h2 class="hero__intro__txt">
-            Hey, I'm Jesse Putnam and I love building beautiful websites
-          </h2>
-          <button type="button" class="btn btn__primary btn__aboutme">
-            <img
-              alt="down arrows"
-              src="images/icons/down-arrows.svg"
-              class="img__btn__arrows"
-            />ABOUT ME
-          </button>
-        </div>
-        <!-- end hero__intro__container -->
-      </section>
-      <!-- end hero__container -->
-
-      <section class="aboutme__container" id="about-me">
+    <div class="body__wrapper">
+      <header>
+        <img alt="Site logo" src="images/logo.svg" class="header__logo" />
+        <nav class="header__links__container desktop">
+          <a class="header__navlink">Home</a>
+          <a class="header__navlink">Portfolio</a>
+          <a class="header__navlink">Contact Me</a>
+        </nav>
         <img
-          alt="Picture of me and my dog, Luna"
-          src="images/personal/LRM-EXPORT-13387477400618-20181008-002051656.jpeg"
-          class="aboutme__img"
+          alt="Toggle nav menu"
+          src="images/icons/hamburger.svg"
+          class="mobile header__mobile__links__toggle"
         />
-        <div class="aboutme__txt__container">
-          <hr class="divider" />
-          <h2 class="aboutme__heading">About Me</h2>
-          <p class="body1">
-            I’m an aspiring junior front-end developer hungry to break into the
-            world of web design. I focus on writing accessible HTML, using
-            modern CSS practices and writing clean and readable JavaScript. I am
-            self-driven and independent, learning HTML5, CSS3, and Vanilla
-            JavaScript on my own through various websites, challenges,
-            textbooks, and projects. I’m based in Portland, ME, but I’m happy
-            working remotely as well. I love reading, critical analysis, and, as
-            a former public school Language Arts teacher, have a great respect
-            and dedication to keeping a growth mindset and being a life-long
-            learner in an infinitely interesting world. When I am not coding, I
-            am often found playing and recording music with guitar, mandolin,
-            and/or accordion &mdash; unless, of course, I'm off hiking with my
-            dog, Luna. I’d love for you to check out my work.
-          </p>
-          <button type="button" class="btn btn__secondary btn__portfolio">
-            GO TO PORTFOLIO
-          </button>
-          <hr class="divider" />
-        </div>
-        <!-- end aboutme__txt__container -->
-      </section>
-      <!-- end aboutme__container -->
+      </header>
 
-      <section class="contact__container">
-        <h2 class="contact__heading">Interested in working together?</h2>
-        <hr class="divider desktop hidden" />
-        <button type="button" class="btn btn__secondary btn__contact">
-          CONTACT ME
-        </button>
-      </section>
-      <!-- end contact__container -->
-    </main>
-    <!-- end main__container -->
+      <main class="main__container">
+        <nav class="header__mobile-links__modal mobile modal">
+          <a>Home</a>
+          <a>Portfolio</a>
+          <a>Contact Me</a>
+        </nav>
+        <!-- end mobile__header__menu -->
+
+        <section class="hero__container">
+          <div class="hero__background__img">
+            <div class="hero__intro__container desktop">
+              <h2 class="hero__intro__txt">
+                Hey, I'm Jesse Putnam and I love building beautiful websites
+              </h2>
+              <button type="button" class="btn btn__primary btn__aboutme">
+                <img
+                  alt="down arrows"
+                  src="images/icons/down-arrows.svg"
+                  class="img__btn__arrows"
+                />ABOUT ME
+              </button>
+            </div>
+            <!-- end hero__intro__container -->
+          </div>
+          <div class="hero__intro__container--mobile mobile">
+            <h2 class="hero__intro__txt">
+              Hey, I'm Jesse Putnam and I love building beautiful websites
+            </h2>
+            <button type="button" class="btn btn__primary btn__aboutme">
+              <img
+                alt="down arrows"
+                src="images/icons/down-arrows.svg"
+                class="img__btn__arrows"
+              />ABOUT ME
+            </button>
+          </div>
+          <!-- end hero__intro__container -->
+        </section>
+        <!-- end hero__container -->
+
+        <section class="aboutme__container" id="about-me">
+          <img
+            alt="Picture of me and my dog, Luna"
+            src="images/personal/me_and_luna.jpeg"
+            class="aboutme__img"
+          />
+          <div class="aboutme__txt__container">
+            <hr class="divider" />
+            <h2 class="aboutme__heading">About Me</h2>
+            <p class="body1">
+              I’m an aspiring junior front-end developer hungry to break into
+              the world of web design. I focus on writing accessible HTML, using
+              modern CSS practices and writing clean and readable JavaScript. I
+              am self-driven and independent, learning HTML5, CSS3, and Vanilla
+              JavaScript on my own through various websites, challenges,
+              textbooks, and projects. I’m based in Portland, ME, but I’m happy
+              working remotely as well. I love reading, critical analysis, and,
+              as a former public school Language Arts teacher, have a great
+              respect and dedication to keeping a growth mindset and being a
+              life-long learner in an infinitely interesting world. When I am
+              not coding, I am often found playing and recording music with
+              guitar, mandolin, and/or accordion &mdash; unless, of course, I'm
+              off hiking with my dog, Luna. I’d love for you to check out my
+              work.
+            </p>
+            <button type="button" class="btn btn__secondary btn__portfolio">
+              GO TO PORTFOLIO
+            </button>
+            <hr class="divider" />
+          </div>
+          <!-- end aboutme__txt__container -->
+        </section>
+        <!-- end aboutme__container -->
+
+        <section class="contact__container">
+          <h2 class="contact__heading">Interested in working together?</h2>
+          <hr class="divider--desktop" />
+          <button type="button" class="btn btn__secondary btn__contact">
+            CONTACT ME
+          </button>
+        </section>
+        <!-- end contact__container -->
+      </main>
+      <!-- end main__container -->
+    </div>
 
     <footer>
       <div class="footer__links__container">
