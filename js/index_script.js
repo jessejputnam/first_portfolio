@@ -7,9 +7,11 @@ TABLE OF CONTENTS:
 */
 
 /* ##################### #DOM Variables ######################### */
-const btnAboutMe = document.querySelector(".btn__aboutme");
+const btnAboutMe = document.querySelectorAll(".btn__aboutme");
 
 /* ##################### #Buttons ######################### */
-btnAboutMe.addEventListener("click", () => {
-  document.getElementById("about-me").scrollIntoView({ behavior: "smooth" });
+btnAboutMe.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.getElementById("about-me").scrollIntoView({ behavior: "smooth" });
+  });
 });
