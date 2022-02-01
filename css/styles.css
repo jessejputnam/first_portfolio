@@ -80,6 +80,11 @@ button, a {
   line-height: 14.1px;
   letter-spacing: 2px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 /* ###################### #Margins ####################### */
@@ -183,19 +188,22 @@ footer {
   margin-top: 25px;
 }
 
-.footer__socials__container {
+.socials__container {
   display: flex;
+}
+
+.footer__socials {
   margin-top: 25px;
 }
 
-.footer__social {
+.link__social {
   filter: invert(100%) sepia(2%) saturate(7%) hue-rotate(7deg) brightness(106%) contrast(102%);
   margin: 0 10px;
   cursor: pointer;
 }
 
 @media (hover: hover) {
-  .footer__social:hover {
+  .link__social:hover {
     filter: invert(69%) sepia(27%) saturate(642%) hue-rotate(82deg) brightness(85%) contrast(92%);
   }
 }
@@ -345,7 +353,7 @@ button {
     margin-left: 30px;
   }
 
-  .footer__socials__container {
+  .socials__container {
     margin: 0 25px 0 0;
   }
 }

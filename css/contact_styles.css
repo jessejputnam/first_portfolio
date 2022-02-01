@@ -1,0 +1,32 @@
+/* 
+TABLE OF CONTENTS:
+#Get in Touch
+#Contact Form
+*/
+
+/* ############### #Get in Touch ############### */
+
+.contact__txt__container {
+  margin: 30px 0;
+}
+
+.contact__txt__heading {
+  margin-bottom: 30px;
+}
+
+.contact__social {
+  margin: 20px 20px 0 0;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .contact__social:hover {
+    filter: invert(69%) sepia(27%) saturate(642%) hue-rotate(82deg) brightness(85%) contrast(92%);
+  }
+}
+
+/* ############### #Contact Form ############### */
+.input__txt {
+  font-size: 13px;
+  line-height: 13px;
+}
