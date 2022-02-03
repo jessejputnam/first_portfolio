@@ -8,8 +8,6 @@ Table of Contents:
 #Footer
 */
 
-/* ####################### #Header ######################### */
-
 /* ####################### #Hero ######################### */
 .hero__background__img {
   background: url("../images/personal/mass_moca_dots1.jpg") no-repeat;
@@ -83,7 +81,6 @@ Table of Contents:
   .aboutme__container {
     display: flex;
     justify-content: space-between;
-    /* max-height: 800px; */
   }
 
   .aboutme__img {
