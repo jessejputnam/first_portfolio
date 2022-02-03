@@ -12,19 +12,8 @@ const textInputs = document.querySelectorAll(".input__txt");
 const btnSubmit = document.getElementById("submit-message");
 
 /* ############### #Created Elements ############### */
-// const errorMessage = document.createElement("p");
-// errorMessage.textContent = "This field is required";
-// errorMessage.classList.add("error__message");
 
 /* ############### #Buttons ############### */
-// btnSubmit.addEventListener("click", () => {
-//   textInputs.forEach((input) => {
-//     if (input.value === "") {
-//       input.style.outline = "solid 2px rgb(244, 48, 48)";
-//     }
-//   });
-// });
-
 btnSubmit.addEventListener("click", () => {
   for (let i = 0; i < textInputs.length; i++) {
     if (textInputs[i].value === "") {
