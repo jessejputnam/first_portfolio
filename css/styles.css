@@ -107,6 +107,10 @@ body {
   border-top: solid 1px rgb(209, 209, 209);
 }
 
+.paragraph__spacing {
+  margin-top: 20px;
+}
+
 /* ##################### #Header ####################### */
 
 header {
@@ -228,6 +232,10 @@ a:active {
   color: rgb(97, 255, 137);
 }
 
+.current__page {
+  color: rgb(95, 180, 116);
+}
+
 button {
   text-align: center;
   line-height: 48px;
@@ -240,6 +248,7 @@ button {
   height: 48px;
   width: 200px;
   transition: background-color .1s, color .1s, box-shadow .1s;
+  cursor: pointer;
 }
 
 @media (hover: hover) {

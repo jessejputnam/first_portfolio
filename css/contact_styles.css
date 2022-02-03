@@ -2,6 +2,9 @@
 TABLE OF CONTENTS:
 #Get in Touch
 #Contact Form
+#Media Queries
+  ##Tablet
+  ##Desktop
 */
 
 /* ############### #Get in Touch ############### */
@@ -26,7 +29,63 @@ TABLE OF CONTENTS:
 }
 
 /* ############### #Contact Form ############### */
+.contact__form__container {
+  padding: 30px 0;
+  margin-bottom: 50px;
+}
+
+.contact__form__heading {
+  margin-bottom: 30px;
+}
+
+.form__label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
 .input__txt {
   font-size: 13px;
   line-height: 13px;
+  margin: 10px 0 0;
+  width: 100%;
+  border: none;
+  padding: 15px 15px;
+  background-color: rgb(234, 234, 235);
+  outline: none;
+}
+
+.input__txt:focus {
+  outline: solid 2px rgb(95, 180, 116);
+}
+
+#contact-message {
+  resize: none;
+  height: 100px;
+  margin-bottom: -5px;
+}
+
+#submit-message {
+  margin-top: 20px;
+}
+
+.error__message {
+  color: rgb(244, 48, 48);
+  font-size: 10px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+/* ############### #Toggle States ############### */
+.visible__hidden {
+  visibility: hidden;
+}
+
+/* ############### #Media Queries ############### */
+
+/* ####### ##Tablet ####### */
+@media only screen and (min-width: 650px) {
+  .main__container {
+    margin-top: 100px;
+  }
 }

@@ -34,7 +34,7 @@ Table of Contents:
   align-items: center;
 }
 
-/*                   ###### #Tablet #####           */
+/*             ###### #Tablet #####           */
 @media only screen and (min-width: 650px) {
   /* hero */
   .hero__background__img {
