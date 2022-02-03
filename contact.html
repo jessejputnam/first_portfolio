@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact page for personal frontend web developer portfolio for Jesse Putnam"
+    />
+    <meta name="author" content="Jesse Putnam" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/programming.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,200;0,400;0,700;1,100;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/contact_styles.css" rel="stylesheet" />
+
+    <script src="js/script.js" defer></script>
+    <script src="js/contact_script.js" defer></script>
+
+    <title>Portfolio | Contact Me</title>
+  </head>
+
+  <body>
+    <div class="body__wrapper">
+      <header>
+        <img alt="Site logo" src="images/logo.svg" class="header__logo" />
+        <nav class="header__links__container desktop">
+          <a href="index.html" class="header__navlink">Home</a>
+          <a class="header__navlink">Portfolio</a>
+          <a class="header__navlink current__page">Contact Me</a>
+        </nav>
+        <img
+          alt="Toggle nav menu"
+          src="images/icons/hamburger.svg"
+          class="mobile header__mobile__links__toggle"
+        />
+      </header>
+
+      <main class="main__container">
+        <nav class="header__mobile-links__modal mobile modal">
+          <a href="index.html">Home</a>
+          <a>Portfolio</a>
+          <a class="current__page">Contact Me</a>
+        </nav>
+        <!-- end mobile__header__menu -->
+
+        <hr class="divider" />
+
+        <section class="contact__txt__container">
+          <h2 class="contact__txt__heading">Get in Touch</h2>
+
+          <div class="contact__txt__p__container">
+            <p class="body2">
+              If you are a recruiter or simply someone with an idea hoping to be made manifest, I’d love to hear about what you’re working on and how I could help. I’m currently looking to transition into a professional role with a company as a frontend web developer, but I am also open to a wide range of opportunities. I am currently location agnostic and willing to relocate for the right position.
+            </p>
+
+            <p class="body2 paragraph__spacing">
+              As proven by my drive and success in teaching myself HTML, CSS, and JavaScript, I’m capable of independent work and study for all technologies needed. I am hard-working and a positive person who will always approach each task with a sense of purpose and attention to detail. Please do feel free to check out my github below to observe my autodidactic journey for yourself, as well as my social media profiles. You may get in touch with me using the form.
+            </p>
+
+            <nav class="socials__container">
+              <a href="https://github.com/jessejputnam" target="_"
+                ><img class="contact__social" src="images/icons/github.svg"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/jesse-putnam-53830622a/"
+                target="_"
+                ><img class="contact__social" src="images/icons/linkedin.svg"
+              /></a>
+              <a href="https://twitter.com/jputnam1200" target="_"
+                ><img class="contact__social" src="images/icons/twitter.svg"
+              /></a>
+            </nav>
+            <!-- end socials__container -->
+          </div>
+          <!-- end contact__txt__p__container -->
+        </section>
+        <!-- end contact__txt__container -->
+
+        <hr class="divider" />
+
+        <section class="contact__form__container">
+          <h2 class="contact__form__heading">Contact Me</h2>
+          <form action="https://formspree.io/f/mrgjpkbl" method="post" class="contact__form">
+            <label for="contact-name" class="form__label">Name</label><br>
+            <input type="text" id="contact-name" name="contact-name" placeholder="Oscar Wilde" class="input__txt" required><br>
+            <p class="error__message contact-name visible__hidden" id="error0">This field is required</p>
+
+            <label for="contact-email" class="form__label">Email</label><br>
+            <input type="email" id="contact-email" name="contact-email" placeholder="doriangrey@earnest.com" class="input__txt" required><br>
+            <p class="error__message contact-email visible__hidden" id="error1">This field is required</p>
+
+            <label for="contact-message" class="form__label">Message</label><br>
+            <textarea id="contact-message" name="contact-message" placeholder="How can I help?" class="input__txt" required></textarea><br>
+            <p class="error__message contact-message visible__hidden" id="error2">This field is required</p>
+            
+            <input type="submit" value="Send Message" class="btn__primary" id="submit-message">
+          </form>
+          <!-- end contact__form -->
+        </section>
+        <!-- end contact__form__container -->
+
+      </main>
+      <!-- end main__container -->
+    </div>
+    <!-- end body__wrapper -->
+
+    <footer>
+      <div class="footer__links__container">
+        <nav class="footer__nav__container">
+          <img src="images/logo.svg" class="footer__logo" />
+          <a class="footer__nav__link">HOME</a>
+          <a class="footer__nav__link">PORTFOLIO</a>
+          <a class="footer__nav__link current__page">CONTACT ME</a>
+        </nav>
+        <!-- end footer__nav__container -->
+        <nav class="socials__container footer__socials">
+          <a href="https://github.com/jessejputnam" target="_"
+            ><img class="link__social" src="images/icons/github.svg"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/jesse-putnam-53830622a/"
+            target="_"
+            ><img class="link__social" src="images/icons/linkedin.svg"
+          /></a>
+          <a href="https://twitter.com/jputnam1200" target="_"
+            ><img class="link__social" src="images/icons/twitter.svg"
+          /></a>
+        </nav>
+        <!-- end socials__container -->
+      </div>
+      <!-- end footer__links__container -->
+      <p class="footer__credit">Icons made by Freepik from www.flaticon.com</p>
+    </footer>
+</html>
