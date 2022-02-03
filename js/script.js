@@ -16,10 +16,10 @@ mobileMenuToggle.addEventListener("click", () => {
   mobileModalLinks.classList.toggle("fade-in");
 
   if (mobileMenuToggle.src.match("hamburger")) {
-    mobileMenuToggle.src = "../images/icons/close.svg";
+    mobileMenuToggle.src = "images/icons/close.svg";
     mobileMenuToggle.style.marginRight = "4px";
   } else {
-    mobileMenuToggle.src = "../images/icons/hamburger.svg";
+    mobileMenuToggle.src = "images/icons/hamburger.svg";
     mobileMenuToggle.style.marginRight = "0";
   }
 });
