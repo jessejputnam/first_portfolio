@@ -1,54 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Homepage for personal frontend web developer portfolio for Jesse Putnam"
+    />
+    <meta name="author" content="Jesse Putnam" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | My Projects</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/programming.png"
+    />
 
-  Home
-  Portfolio
-  Contact Me
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,700;1,400&family=Public+Sans:ital,wght@0,200;0,400;0,700;1,100;1,200;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-  Manage
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/portfolio_styles.css" rel="stylesheet" />
 
-  This project required me to build a fully responsive landing page to the designs provided. 
-  I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-  such as the testimonial slider.
+    <script src="js/script.js" defer></script>
+    <script src="js/index_script.js" defer></script>
 
-  View Project
+    <title>Jesse Putnam | My Projects</title>
+  </head>
+  <body>
+    <div class="body__wrapper">
+      <header>
+        <img alt="Site logo" src="images/logo.svg" class="header__logo" />
+        <nav class="header__links__container desktop">
+          <a href="index.html" class="header__navlink">Home</a>
+          <a class="header__navlink current__page">Portfolio</a>
+          <a class="header__navlink">Contact Me</a>
+        </nav>
+        <img
+          alt="Toggle nav menu"
+          src="images/icons/hamburger.svg"
+          class="mobile header__mobile__links__toggle"
+        />
+      </header>
 
-  Bookmark
+      <main class="main__container">
+        <nav class="header__mobile-links__modal mobile modal">
+          <a href="index.html">Home</a>
+          <a class="current__page">Portfolio</a>
+          <a>Contact Me</a>
+        </nav>
+        <!-- end mobile__header__menu -->
 
-  This project required me to build a fully responsive landing page to the designs provided. I 
-  used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-  as the features section.
+        <section class="projects__grid">
+          <div class="grid__item">
+            <div class="grid__item__detail item__img">
+              Fake Bank Landing Img
+            </div>
+            <div class="grid__item__detail item__info">
+              Fake Bank Landing Info
+            </div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__item__detail item__img">Tic Tac Toe Img</div>
+            <div class="grid__item__detail item__info">Tic Tac Toe Info</div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__item__detail item__img">Tip Calculator Img</div>
+            <div class="grid__item__detail item__info">Tip Calculator Info</div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__item__detail item__img">Etch-a-Sketch Img</div>
+            <div class="grid__item__detail item__info">Etch-a-Sketch Info</div>
+          </div>
+          <div class="grid__item">
+            <div class="grid__item__detail item__img">Calculator Img</div>
+            <div class="grid__item__detail item__info">Calculator Info</div>
+          </div>
+        </section>
 
-  View Project
+        <section class="contact__container">
+          <h2 class="contact__heading">Interested in working together?</h2>
+          <hr class="divider--desktop" />
+          <a href="contact.html">
+            <button type="button" class="btn btn__secondary btn__contact">
+              CONTACT ME
+            </button>
+          </a>
+        </section>
+        <!-- end contact__container -->
+      </main>
+      <!-- end main__container -->
+    </div>
+    <!-- end body__wrapper -->
 
-  Insure
+    <footer>
+      <div class="footer__links__container">
+        <nav class="footer__nav__container">
+          <img src="images/logo.svg" class="footer__logo" />
+          <a class="footer__nav__link current__page">HOME</a>
+          <a href="portfolio.html" class="footer__nav__link">PORTFOLIO</a>
+          <a href="contact.html" class="footer__nav__link">CONTACT ME</a>
+        </nav>
+        <!-- end footer__nav__container -->
 
-  This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-  landing page. The only JavaScript this project required was to enable the toggling of the 
-  mobile navigation.
+        <nav class="socials__container footer__socials">
+          <a href="https://github.com/jessejputnam" target="_"
+            ><img class="link__social" src="images/icons/github.svg"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/jesse-putnam-53830622a/"
+            target="_"
+            ><img class="link__social" src="images/icons/linkedin.svg"
+          /></a>
+          <a href="https://twitter.com/jputnam1200" target="_"
+            ><img class="link__social" src="images/icons/twitter.svg"
+          /></a>
+        </nav>
+        <!-- end socials__container -->
+      </div>
+      <!-- end footer__links__container -->
+      <p class="footer__credit">Icons made by Freepik from www.flaticon.com</p>
+    </footer>
 
-  View Project
-
-  Fylo
-
-  This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
-  built it so that it was fully-responsive. I took a mobile-first approach and used modern 
-  CSS like Flexbox and Grid for layout purposes.
-
-  View Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
-</body>
+    Manage This project required me to build a fully responsive landing page to
+    the designs provided. I used HTML5, along with CSS Grid and JavaScript for
+    the areas that required interactivity, such as the testimonial slider. View
+    Project Bookmark This project required me to build a fully responsive
+    landing page to the designs provided. I used HTML5, along with CSS Grid and
+    JavaScript for the areas that required interactivity, such as the features
+    section. View Project Insure This was a small project which mostly consisted
+    of HTML and CSS. I built a fully-responsive landing page. The only
+    JavaScript this project required was to enable the toggling of the mobile
+    navigation. View Project Fylo This project was built in pure HTML and CSS. I
+    had mobile and desktop designs to work to and built it so that it was
+    fully-responsive. I took a mobile-first approach and used modern CSS like
+    Flexbox and Grid for layout purposes. View Project
+  </body>
 </html>
