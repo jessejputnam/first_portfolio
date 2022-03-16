@@ -5,6 +5,8 @@ TABLE OF CONTENTS:
 #DOM Variables
 */
 
+//! ADD LAZY LOAD FUNCTIONALITY TO IMAGES (SEE 13-ADVANCED-DOM-BANKIST FOR HOW)
+
 /* ##################### #DOM Variables ######################### */
 const mobileMenuToggle = document.querySelector(
   ".header__mobile__links__toggle"
@@ -17,6 +19,7 @@ mobileMenuToggle.addEventListener("click", () => {
   mobileModalLinks.classList.toggle("fade-in");
 
   if (mobileMenuToggle.src.match("hamburger")) {
+    x;
     mobileMenuToggle.src = "images/icons/close.svg";
     mobileMenuToggle.style.marginRight = "4px";
   } else {
