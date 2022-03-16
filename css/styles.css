@@ -105,6 +105,10 @@ body {
   background: rgb(250, 250, 250);
 }
 
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
 .body__wrapper {
   padding: 0 30px;
 }
@@ -300,6 +304,11 @@ button {
 /* ################## #Toggle States ##################### */
 .hidden {
   display: none;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .fade-in {
