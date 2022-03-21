@@ -281,6 +281,7 @@ button {
 
 .btn__secondary {
   height: 48px;
+  line-height: 42px;
   width: 175px;
   background-color: white;
   border-color: rgb(32, 58, 76);

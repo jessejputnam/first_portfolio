@@ -11,21 +11,72 @@ Table of Contents:
   flex-direction: column;
 }
 
-.grid__item {
-  border: solid 1px black;
+.item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
 }
 
 .grid__item__detail {
-  border: solid 1px black;
-  height: 311px;
+  /* border: solid 1px black; */
+  border-radius: 3px;
+  /* height: 311px; */
+  overflow: hidden;
+  margin: 30px 0;
 }
 
-.portfolio__index__img {
-  height: 80%;
+.item__img__container {
+  box-shadow: 0 0 5px 1px gray;
+}
+
+.item__img {
+  border-radius: 3px;
+  object-fit: contain;
+  height: 70vw;
   position: relative;
-  top: 50px;
-  width: 250px;
+  top: 20px;
   margin: 0 auto;
+}
+
+.grid__item--0 .item__img__container {
+  background-image: linear-gradient(
+    to right,
+    hsla(136, 65%, 51%, 0.695),
+    hsla(192, 70%, 51%, 0.688)
+  );
+}
+
+.grid__item--1 .item__img__container {
+  background-image: linear-gradient(
+    to right,
+    rgba(18, 165, 18, 0.695),
+    rgba(165, 118, 18, 0.688)
+  );
+}
+
+.grid__item--2 .item__img__container {
+  background-image: linear-gradient(
+    to right,
+    rgba(69, 128, 128, 0.795),
+    rgba(99, 186, 186, 0.788)
+  );
+}
+
+.grid__item--3 .item__img__container {
+  background-image: linear-gradient(
+    to right,
+    rgba(63, 51, 51, 0.788),
+    rgba(190, 22, 22, 0.795)
+  );
+}
+
+.grid__item--4 .item__img__container {
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 82, 86, 0.788),
+    rgba(38, 192, 171, 0.795)
+  );
 }
 
 /* ####################### #Media Query ######################### */
