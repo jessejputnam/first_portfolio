@@ -19,7 +19,6 @@ mobileMenuToggle.addEventListener("click", () => {
   mobileModalLinks.classList.toggle("fade-in");
 
   if (mobileMenuToggle.src.match("hamburger")) {
-    x;
     mobileMenuToggle.src = "images/icons/close.svg";
     mobileMenuToggle.style.marginRight = "4px";
   } else {
