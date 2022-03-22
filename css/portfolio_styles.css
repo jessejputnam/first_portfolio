@@ -11,6 +11,10 @@ Table of Contents:
   flex-direction: column;
 }
 
+.section-slide {
+  transition: all 1s;
+}
+
 .item__info {
   display: flex;
   flex-direction: column;

@@ -22,8 +22,22 @@ Table of Contents:
   margin-bottom: 24px;
 }
 
+.hero__intro__txt--sub-mobile {
+  margin-top: -20px;
+  margin-bottom: 24px;
+  font-size: 25px;
+  color: rgb(97, 97, 97);
+}
+
+.hero__intro__txt--sub-desk {
+  margin-top: -10px;
+  line-height: clamp(15px, 3.1vw, 35px);
+  font-size: clamp(15px, 3.1vw, 35px);
+  color: rgb(97, 97, 97);
+}
+
 .hero__container {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .btn__aboutme {
@@ -42,7 +56,7 @@ Table of Contents:
 
   .hero__intro__container {
     height: clamp(160px, 26vw, 250px);
-    width: 420px;
+    width: clamp(269px, 43.7vw, 420px);
     padding: 20px 20px 0 0;
     background-color: white;
     position: absolute;
@@ -51,7 +65,7 @@ Table of Contents:
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 0 0 4px 0 gray;;
+    box-shadow: 0 0 4px 0 gray;
   }
 
   .hero__intro__txt {
@@ -99,5 +113,5 @@ Table of Contents:
 
   .aboutme__txt__container > .body1 {
     font-size: clamp(13px, 1.5vw, 16px);
-  } 
+  }
 }

@@ -9,6 +9,7 @@ TABLE OF CONTENTS:
 /* ##################### #DOM Variables ######################### */
 const btnAboutMe = document.querySelectorAll(".btn__aboutme");
 const aboutMeSection = document.getElementById("about-me");
+const allSections = document.querySelectorAll(".section");
 
 /* ##################### #Buttons ######################### */
 btnAboutMe.forEach((btn) => {
@@ -22,4 +23,10 @@ btnAboutMe.forEach((btn) => {
     // Does not work for iOS and IE and Safari
     // aboutMeSection.scrollIntoView({ behavior: "smooth" });
   });
+});
+
+// Reveal Sections
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
 });
