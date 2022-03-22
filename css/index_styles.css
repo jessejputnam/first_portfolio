@@ -3,6 +3,7 @@ Table of Contents:
 
 #Header
 #Hero
+#Skills
 #About Me
 #Contact
 #Footer
@@ -10,7 +11,8 @@ Table of Contents:
 
 /* ####################### #Hero ######################### */
 .hero__background__img {
-  background: url("../images/personal/mass_moca_dots1.jpg") no-repeat;
+  background: url("../images/index/mass_moca_dots-reverse.jpg") no-repeat;
+  background-position: right;
   background-size: cover;
   width: clamp(310px, 100%, 1110px);
   margin-bottom: 24px;
@@ -72,6 +74,36 @@ Table of Contents:
     font-size: clamp(20px, 4vw, 45px);
     margin-bottom: 5px;
   }
+}
+
+/* ####################### #Skills ######################### */
+.skills__container {
+  margin-bottom: 35px;
+}
+
+.skills__heading {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.skills__details__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill__detail {
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.skill__detail--img {
+  height: 60px;
+  margin-bottom: 15px;
 }
 
 /* ####################### #About Me ######################### */

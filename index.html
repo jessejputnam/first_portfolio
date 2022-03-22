@@ -97,21 +97,81 @@
         </section>
         <!-- end hero__container -->
 
-        <section class="section aboutme__container" id="about-me">
+        <section class="section skills__container section--hidden">
+          <!-- 
+            HTML: semantic
+            CSS: responsive and modern
+            JS: Focus on ES6 
+          -->
+          <hr class="divider" />
+          <div class="skills__heading">
+            <h2>Skills</h2>
+            <p class="body2">
+              These are the technologies I currently practice and use
+            </p>
+          </div>
+          <!-- end skills__heading -->
+          <div class="section skills__details__container section--hidden">
+            <div class="skill__detail">
+              <img
+                src="images/index/HTML5_Badge.svg"
+                alt="HTML5 logo"
+                class="skill__detail--img"
+              />
+              <h4>HTML</h4>
+              <p class="body3">
+                I am able to translate mock-ups into semantic HTML with or
+                without technologies like Figma.
+              </p>
+            </div>
+            <div class="skill__detail">
+              <img
+                src="images/index/CSS3_logo.svg"
+                alt="CSS3 logo"
+                class="skill__detail--img"
+              />
+              <h4>CSS</h4>
+              <p class="body3">
+                I use CSS to display responsive, aesthetically pleasing layouts
+                for a better overall user experience.
+              </p>
+            </div>
+            <div class="skill__detail">
+              <img
+                src="images/index/JS_badge.svg"
+                alt="JavaScript logo"
+                class="skill__detail--img"
+              />
+              <h4>JavaScript</h4>
+              <p class="body3">
+                I work mostly with ES6 syntax in JavaScript while keeping myself
+                familiar with deprecated constructions.
+              </p>
+            </div>
+          </div>
+
+          <!-- <hr class="divider" /> -->
+        </section>
+        <!-- end skills__container -->
+
+        <section
+          class="section aboutme__container section--hidden"
+          id="about-me"
+        >
           <img
             alt="Picture of me and my dog, Luna"
-            src="images/personal/me_and_luna.jpeg"
+            src="images/index/me_and_luna.jpeg"
             class="aboutme__img"
           />
-          <div class="section aboutme__txt__container">
+          <div class="section aboutme__txt__container section--hidden">
             <hr class="divider" />
             <h2 class="aboutme__heading">About Me</h2>
             <p class="body1">
               I’m an aspiring junior front-end developer transitioning careers.
-              I am self-driven and independent, on my own through various
-              websites, challenges, textbooks, and projects. I am currently
-              based in Western MA, but I’m looking to relocate and am happy
-              working remotely as well.
+              I am self-driven and independent, learning to code on my own
+              through documentation, challenges, textbooks, and projects. I am
+              currently based in Western MA, but I’m looking to relocate and
+              willing to work remotely as well.
               <br /><br />
               I love reading, critical analysis, and, as a former public school
               Language Arts teacher, have a great respect and dedication to
@@ -120,8 +180,7 @@
               <br /><br />
               When I am not coding, I am often found playing and recording music
               with guitar, mandolin, and/or accordion &mdash; unless, of course,
-              I'm off hiking with my dog, Luna. I’d love for you to check out my
-              work.
+              I'm off hiking with my dog, Luna.
             </p>
             <button type="button" class="btn btn__secondary btn__portfolio">
               GO TO PORTFOLIO
@@ -132,7 +191,7 @@
         </section>
         <!-- end aboutme__container -->
 
-        <section class="section contact__container">
+        <section class="section contact__container section--hidden">
           <h2 class="contact__heading">Interested in working together?</h2>
           <hr class="divider--desktop" />
           <a href="contact.html">

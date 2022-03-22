@@ -70,6 +70,12 @@ h3 {
   letter-spacing: -0.29px;
 }
 
+h4 {
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -0.22px;
+}
+
 .body1 {
   font-size: 16px;
   line-height: 30px;
@@ -78,6 +84,12 @@ h3 {
 .body2 {
   font-size: 15px;
   line-height: 30px;
+}
+
+.body3 {
+  font-size: 13px;
+  line-height: 18px;
+  color: rgb(100, 100, 100);
 }
 
 button,
@@ -106,7 +118,7 @@ body {
 }
 
 .section {
-  transition: transform 1s, opacity 1s;
+  transition: all 1s;
 }
 
 .body__wrapper {
