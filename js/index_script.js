@@ -8,7 +8,7 @@ TABLE OF CONTENTS:
 
 /* ##################### #DOM Variables ######################### */
 const btnAboutMe = document.querySelectorAll(".btn__aboutme");
-const aboutMeSection = document.getElementById("about-me");
+const aboutMeSection = document.getElementById("about-me-scroll");
 const allSections = document.querySelectorAll(".section");
 
 /* ##################### #Buttons ######################### */

@@ -78,18 +78,24 @@ Table of Contents:
 
 /* ####################### #Skills ######################### */
 .skills__container {
-  margin-bottom: 35px;
+  margin-bottom: 50px;
+  transition: all 1s;
+  overflow: hidden;
 }
 
 .skills__heading {
-  margin: 50px 0;
+  margin: 35px 0;
   text-align: center;
+  transition: all 1s;
 }
 
 .skills__details__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  transition: all 1s;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .skill__detail {
@@ -99,18 +105,36 @@ Table of Contents:
   align-items: center;
   text-align: center;
   margin-bottom: 25px;
+  transition: all 1s;
 }
 
 .skill__detail--img {
   height: 60px;
   margin-bottom: 15px;
+  transition: all 1s;
+}
+
+@media only screen and (min-width: 650px) {
+  .skills__container {
+    margin: 100px 0;
+  }
+
+  .skills__details__container {
+    margin-bottom: 50px;
+  }
 }
 
 /* ####################### #About Me ######################### */
 .aboutme__img {
   max-height: 540px;
-  margin-bottom: 32px;
+  margin-top: 35px;
   box-shadow: 0 0 4px 0 gray;
+}
+
+@media only screen and (max-width: 649px) {
+  .aboutme__img {
+    margin: 70px 0;
+  }
 }
 
 .aboutme__heading {
@@ -121,7 +145,7 @@ Table of Contents:
   margin: 15px 0 35px;
 }
 
-/*       ####### #Tablet ####### */
+/*       ----- #Tablet ----- */
 
 @media only screen and (min-width: 650px) {
   .aboutme__container {
@@ -141,6 +165,10 @@ Table of Contents:
   .aboutme__txt__container {
     width: 45vw;
     max-width: 490px;
+  }
+
+  .divider--hide {
+    opacity: 0;
   }
 
   .aboutme__txt__container > .body1 {
