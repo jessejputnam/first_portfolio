@@ -23,9 +23,8 @@ Table of Contents:
 }
 
 .grid__item__detail {
-  /* border: solid 1px black; */
   border-radius: 3px;
-  /* height: 311px; */
+  max-height: 400px;
   overflow: hidden;
   margin: 30px 0;
 }
@@ -87,10 +86,23 @@ Table of Contents:
 @media only screen and (min-width: 560px) {
   .grid__item {
     display: flex;
+    justify-content: space-between;
   }
 
   .grid__item__detail {
-    width: 50%;
-    height: 100%;
+    width: 47%;
+  }
+
+  .item__img {
+    object-fit: cover;
+    height: clamp(300px, 30vw, 450px);
+  }
+
+  .grid__item--1 {
+    flex-direction: row-reverse;
+  }
+
+  .grid__item--3 {
+    flex-direction: row-reverse;
   }
 }

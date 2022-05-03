@@ -1,6 +1,6 @@
 "use strict";
 
-const allSections = document.querySelectorAll(".section-slide");
+const allSections = document.querySelectorAll(".item__img__container--slide");
 
 // Reveal Sections on scroll
 // const revealSection = function (entries, observer) {
