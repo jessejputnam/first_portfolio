@@ -82,6 +82,14 @@ Table of Contents:
   );
 }
 
+.grid__item--5 .item__img__container {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(19, 85, 126, 0.788),
+    rgba(140, 181, 201, 0.708)
+  );
+}
+
 /* ####################### #Media Query ######################### */
 @media only screen and (min-width: 560px) {
   .grid__item {
@@ -103,6 +111,10 @@ Table of Contents:
   }
 
   .grid__item--3 {
+    flex-direction: row-reverse;
+  }
+
+  .grid__item--5 {
     flex-direction: row-reverse;
   }
 }
